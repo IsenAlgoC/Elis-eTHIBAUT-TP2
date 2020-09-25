@@ -11,7 +11,7 @@ int main() {
 
 
 	while (volonte == 1) {
-		while ((A > 150.0) || (B > 150.0) || (C > 150.0)) {
+		while ((A > 150.0) || (B > 150.0) || (C > 150.0)||(A <0.0) || (B < 0.0) || (C < 0.0)) {//on elimine les valeurs interdites
 			printf("Entrer la valeur de la longueur de la valise\n");//longueur, largeur ou hauteur
 			scanf_s("%f", &A);
 			printf("Entrer la valeur de la largeur de la valise\n");
