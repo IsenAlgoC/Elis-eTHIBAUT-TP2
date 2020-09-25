@@ -11,6 +11,15 @@ int main() {
 		scanf_s("%d", &annee);
 	}
 
+	if (((annee % 400 == 0)) || ((annee % 4 == 0) && (annee % 100 != 0))){
+		printf("annee bissextile"); 
+	}
+	
+	else {
+		printf("annee non bissextile");
+	}
+
+
 	if (annee % 4 == 0) {
 		if (annee % 100 == 0) {
 			if (annee % 400 == 00) {
